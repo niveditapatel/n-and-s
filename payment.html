@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<title> N&S Cart</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {font-family:"Oswald"}
+
+#navbar {
+  overflow: hidden;
+  background-color:black;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: purple;
+  color: white;
+}
+
+#navbar a.active {
+  background-color: purple ;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+
+</style>
+</head>
+
+<body style="background-color:#ecdfec"><font face="Oswald" color="#404040">
+
+
+<div class="header">
+  <h1 class=" w3-center"><b>N&S</b></h2>
+</div>
+
+<div id="navbar">
+  <a  href="homepage.html">Home</a>
+   <a href="CardHolders.html">Card and Passport Holders</a>
+  <a href="Backpacks.html">Backpacks</a>
+<a href="Jackets.html">Jackets</a>
+  <a href="Suitcases.html">Suitcases</a>
+  <a href="Plane.html">Airplane Must Haves</a>
+<a href="Mini.html">Travel Minis</a>
+<a href="Sunglasses.html">Sunglasses</a>
+<a href="NS.html" >N&S Exclusives</a>
+<a href="Sale.html">Sale</a>
+<a  href="About.html">About</a>
+<a href="Contact.html">Contact</a>
+<a class="active" href="Cart.html" class="w3-bar-item w3-button w3-right"><i class="fa fa-shopping-cart"></i></a>
+<a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+<a   href="Signin.html" class="w3-right">Sign in</a>
+</div>
+
+<br></br>
+<h4 ><b>CLICK ON THE PAYPAL BUTTON TO COMPLETE THE PAYMENT PROCEDURE : 
+</b></h4>
+<br></br>
+
+
+<script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+<script>paypal.Buttons().render('body');</script>
+
+
+
+
+</font>
+
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+</script>
+
+
+</body>
+</html>
+
+

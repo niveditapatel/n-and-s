@@ -1,0 +1,179 @@
+<html>
+<title>N&S template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 50px;
+}
+.row::after {
+hiesght: 100px;
+  content: "";
+  clear: both;
+  display: table;
+}
+.crop{
+height=70px;
+overflow: hidden;
+}
+.crop img {
+    height: 70%;
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{font-family: "Oswald"}
+body{ font-family: "Open-Sans"}
+
+#navbar {
+  overflow: hidden;
+  background-color:black;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: purple;
+  color: white;
+}
+
+#navbar a.active {
+  background-color: purple ;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+
+
+<body style="background-color:#ecdfec"><font face="Oswald" color="#404040">
+
+<div class="header">
+  <h1 class=" w3-center"><b>N&S</b></h2>
+</div>
+
+<div id="navbar">
+  <a  href="homepage.html">Home</a>
+   <a href="CardHolders.html">Card and Passport Holders</a>
+  <a href="Backpacks.html">Backpacks</a>
+<a href="Jackets.html">Jackets</a>
+  <a href="Suitcases.html">Suitcases</a>
+  <a href="Plane.html">Airplane Must Haves</a>
+<a href="Mini.html">Travel Minis</a>
+<a href="Sunglasses.html">Sunglasses</a>
+<a href="NS.html" >N&S Exclusives</a>
+<a href="Sale.html">Sale</a>
+<a class="active" href="About.html">About</a>
+<a href="Contact.html">Contact</a>
+<a href="Cart.html" class="w3-bar-item w3-button w3-right"><i class="fa fa-shopping-cart"></i></a>
+<a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+<a href="Signin.html" class="w3-right">Sign in</a>
+</div>
+
+
+<div class='crop col-xs-12 col-sm-6 col-md-6 '>
+<div class="row">
+   <div class="column">
+<div id="container"> 
+     <img src="2.jpg" id="image" />
+ </div>
+ </div>
+
+<div class="column">
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT US</span></h5>
+<div class="w3-container w3-light-grey w3-padding-40">
+    <p style="color:#404040; font-family:Oswald;text-align:center;">N&S Travel Accessories is an online store that has been started by two in 2018. We understand the demands of all the travel enthusiasts out there and help them pack their bags with personally curated handy accessories. We believe in packing lighter and going further. </p>
+<p style="color:#404040; font-family:Oswald;text-align:center;">We created N&S because we wanted to provide people with all the things they need in one place. If we dont love it, we dont sell it. We have you guys covered for all your travel needs and more. We want to make your trip as comfortable as possible.
+</p></div>
+ </div>
+</div></div>
+<br></br>
+</div></div>
+
+<footer class="w3-padding-64 w3-black w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-light-grey">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p><a href="#">Find store</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> N&S</p>
+        <p><i class="fa fa-fw fa-phone"></i> xxxxxxxxxx</p>
+        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+</script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<title> N&S Cart</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {font-family:"Oswald"}
+
+#navbar {
+  overflow: hidden;
+  background-color:black;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: purple;
+  color: white;
+}
+
+#navbar a.active {
+  background-color: purple ;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+
+</style>
+</head>
+
+<body style="background-color:#ecdfec"><font face="Oswald" color="#404040">
+
+
+<div class="header">
+  <h1 class=" w3-center"><b>N&S</b></h2>
+</div>
+
+<div id="navbar">
+  <a  href="homepage.html">Home</a>
+   <a href="CardHolders.html">Card and Passport Holders</a>
+  <a href="Backpacks.html">Backpacks</a>
+<a href="Jackets.html">Jackets</a>
+  <a href="Suitcases.html">Suitcases</a>
+  <a href="Plane.html">Airplane Must Haves</a>
+<a href="Mini.html">Travel Minis</a>
+<a href="Sunglasses.html">Sunglasses</a>
+<a href="NS.html" >N&S Exclusives</a>
+<a href="Sale.html">Sale</a>
+<a  href="About.html">About</a>
+<a href="Contact.html">Contact</a>
+<a class="active" href="Cart.html" class="w3-bar-item w3-button w3-right"><i class="fa fa-shopping-cart"></i></a>
+<a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+<a   href="Signin.html" class="w3-right">Sign in</a>
+</div>
+
+
+<h1 style="text-align: center"> REGISTRATION FORM </h1>
+<div align="center">           
+<form id="register-form"> 
+<input id="name" type="text" placeholder="Name" value=""/><br>
+<input id="ad" type="text" placeholder="Address" value=""/><br>
+<input id="number" type="text" placeholder="Number" value=""/><br>
+<input id="email" type="text" placeholder="Email" value=""/><br>
+ <input id="pw" type="password" placeholder="Password" value=""/><br>
+ <input id="rgstr_btn" type="submit" value="get Account" onClick="store()"/><br> 
+</form>
+</div>
+
+
+
+
+
+<br></br>
+
+
+
+<footer class="w3-padding-64 w3-black w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-light-grey">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p><a href="#">Find store</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> N&S</p>
+        <p><i class="fa fa-fw fa-phone"></i> xxxxxxxxxx</p>
+        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+</font>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+var name = document.getElementById('name');
+var ad = document.getElementById('ad');
+var number = document.getElementById('number');
+var email = document.getElementById('email');
+var pw = document.getElementById('pw');
+
+// storing input from register-form
+function store() {
+    localStorage.setItem('name', name.value);
+localStorage.setItem('ad', ad.value);
+localStorage.setItem('number', number.value);
+localStorage.setItem('email', email.value);
+    localStorage.setItem('pw', pw.value);
+}
+
+
+</script>
+
+
+</body>
+</html>
+
